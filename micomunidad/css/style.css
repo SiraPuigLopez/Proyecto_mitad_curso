@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+* {
+  box-sizing: border-box;
+}
+html {
+  /*para hacer las fuentes relativas*/
+  font-size: 100%;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  h1 {
+    visibility: hidden;
+  }
+  button {
+    visibility: collapse;
+  }
+  .user {
+    visibility: visible;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  /*tablet*/
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #c04747;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 0.5rem;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 4rem; /**/
+  background-color: #f7b5b5;
+  align-items: center;
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 2rem;
+}
+.left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.icono {
+  /* imagen liquida que responde al tamaño de su padre */
+  height: 4rem;
+}
+h1 {
+  text-align: center;
+  font-family: "Russo One";
+  font-weight: 400;
+  font-size: calc(0.5rem + 2vw);
+  color: white;
+}
+.alta {
+  display: flex;
+  flex-direction: row;
+}
+div {
+  /*botones de usuario*/
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+  /* background-color: #c04747; */
+  background-color: #c04747;
+  height: 3rem;
+  width: 8rem;
+  border-radius: calc(3rem / 2);
+  font-family: "Russo One";
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: white;
+}
+.user {
+  height: 3rem;
+  width: 3rem;
+  background-image: url(../images/index.jpg);
+  background-size: cover;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 0rem 5rem 0rem;
+  align-items: center;
+  background-image: url(../images/senior-couple-walking-in-neighborhood-2022-03-04-01-53-11-utc.jpg);
+  background-size: cover;
+}
+
+.principal {
+  max-width: 50%;
+  text-align: justify;
+}
+.principal2 {
+  width: 75%;
+  text-align: center;
+}
+p {
+  color: white;
+  border: white 5px hidden;
+  text-align: justify;
+  padding: 1rem;
+}
+
+.bighouse:hover {
+  box-shadow: -7px -7px 20px rgba(0, 0, 0, 0.5), 7px 7px 20px rgba(0, 0, 0, 0.5);
+}
+.intro {
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+.go {
+  width: 16rem;
+  background-color: #f7b5b5;
+}
+/* menu hamburguesa */
+
+#menu {
+  display: none;
+  font-family: "Russo One";
+  font-weight: 400;
+  color: black;
+  width: 15rem;
+  height: 30rem;
+}
+nav label {
+  font-size: 2.5rem; /*mediaquerie*/
+}
+.primermenu ul {
+  display: none; /*oculta hasta check*/
+  list-style-type: none;
+  text-align: left;
+  font-family: "Russo One";
+  font-weight: 400;
+  font-size: calc(0.25rem + 2vw);
+  color: white;
+  list-style-position: outside;
+  background-color: #f7b5b5;
+  border-radius: 2rem;
+}
+input:checked ~ ul {
+  display: block;
+  position: absolute;
+}
+
+label {
+  display: block;
+  user-select: none;
+  border-radius: 0.5rem;
+}
+li {
+  padding: 1rem;
+  text-align: left;
+  font-size: 1.5rem;
+}
+footer {
+  /* background-color: rgb(115, 38, 203); */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.copyright {
+  display: flex;
+  align-items: baseline;
+}
+.copyright {
+  font-size: small;
+  display: flex;
+  flex-direction: row;
+}
+
+.profiles ul {
+  display: flex;
+}
+.profiles ul li {
+  list-style-type: none;
+  flex-direction: row;
+}
+footer img {
+  height: 50%;
+  border: white 1px solid;
+  border-radius: 25%;
+}
+label:hover {
+  background: white;
+}
+:hover {
+  /* no funcionara hasta restaurar bordes */
+  border-color: currentColor;
+}
+p:hover {
+  border: none 1px solid;
+  background: white;
+  color: black;
+}
+
+iframe {
+  border: none;
+  max-width: 100%;
+  height: auto;
+}
